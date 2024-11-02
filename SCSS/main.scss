@@ -20,6 +20,18 @@ body {
     margin: 0 auto;
 }
 
+.basket {
+    position: relative;
+    z-index: -12;
+
+    .four {
+        position: absolute;
+        left:  10px;
+        bottom: 10px;
+        z-index: 2;
+    }
+}  
+
 .excellent {
     margin: 0 auto;
     display: flex;
@@ -94,13 +106,17 @@ body {
         border-radius: 2px;
         color: $oq;
         font-size: 16px;
+        transition: 0.3s;
+        &:active{
+        transform: scale(0.95);
     }
+
 }
 
-
-
-
-
+    .btn-2:hover {
+        background-color: #ff921d;
+    }
+}
 
 
 
@@ -123,7 +139,7 @@ body {
     .photo-2 {
         margin: 0 auto;
         margin-top: -1000px;
-        margin-left: 160px;
+        margin-left: 180px;
     }
 }
 
